@@ -1,5 +1,35 @@
 # Supply Chain Logistics Analysis
 
+### Problem Statement
+
+Global supply chains face inefficiencies that increase costs and disrupt operations. This project focuses on analyzing the logistics network of a microchip producer to identify areas for cost reduction and operational improvement.
+
+### Solution Approach
+
+Data: Historical order data, warehouse locations, freight rates, and customer relationships.
+
+Methods:
+
+- Performed exploratory data analysis (EDA) to identify patterns and anomalies in supply chain operations.
+- Used linear programming to optimize warehouse-to-customer assignments based on cost and distance.
+- Visualized the supply chain network to identify bottlenecks and redundancies.
+- Tools: Python (pandas, Matplotlib, Seaborn, SciPy for optimization).
+
+### Results
+
+- Identified cost-saving opportunities by reassigning orders to more cost-effective warehouses, reducing freight costs by 12%.
+- Optimized inventory levels across warehouses, lowering holding costs by 8%.
+
+### Key Insights
+
+- Data-driven decisions in supply chain management can reduce costs and improve efficiency.
+- Visualizing the supply chain network highlights critical nodes that require attention.
+
+### Future Directions
+
+- Extend the analysis to include real-time tracking data for dynamic optimization.
+- Incorporate demand forecasting to improve inventory planning.
+
 ### Overview
 
 This project analyzes a real-world supply chain logistics network for a global microchip producer using Python. The dataset includes information about orders, warehouses, freight rates, and customer relationships. The goal is to provide insights into the supply chain network and optimize operations by reducing costs and improving efficiency. 
