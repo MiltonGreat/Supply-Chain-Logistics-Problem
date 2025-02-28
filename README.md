@@ -1,4 +1,4 @@
-# Supply Chain Logistics Analysis
+# Supply Chain Logistics Optimization for a Global Microchip Producer
 
 ## Overview
 
@@ -6,8 +6,7 @@ This project analyzes a real-world supply chain logistics network for a global m
 
 ### Problem Statement
 
-Global supply chains face inefficiencies that increase costs and disrupt operations. This project focuses on analyzing the logistics network of a microchip producer to identify areas for cost reduction and operational improvement.
-
+This project aims to analyze the supply chain logistics network for a global microchip producer, focusing on optimizing operations by reducing costs and improving efficiency. The analysis covers orders, warehouses, freight rates, and customer relationships, providing data-driven insights for strategic decision-making.
 
 ### Dataset Description
 
@@ -21,18 +20,13 @@ The data is sourced from a Microsoft Excel file, Supply chain logistics problem.
 - ProductsPerPlant: List of products supported by each warehouse.
 - VmiCustomers: Special warehouse-customer relationships.
 
-### Solution Approach
+### Analysis Approach
 
-EDA helps understand the data distribution and uncover key insights. Visualizations include:
-
-- Orders by Warehouse: Number of orders processed by each warehouse.
-- Service Levels: Distribution of service levels (e.g., Door-to-Door, Door-to-Port).
-- Shipping Modes: Frequency of air vs. ground shipments.
-- Order Weights: Distribution of order weights.
-- Freight Rates by Carrier: Variability in shipping rates among carriers.
-- Warehouse Capacities: Utilization levels of warehouse capacities.
-- Customer Distribution: Top customers by number of orders.
-- Products Supported by Warehouse: Number of products each warehouse stocks.
+1. Exploratory Data Analysis (EDA): Understand the data structure, detect outliers, and identify key patterns.
+2. Correlation Analysis: Examine relationships between shipment volumes, freight rates, and delays.
+3. Heatmaps and Visualizations: Visualize shipment flows, carrier performance, and cost distributions.
+4. Cost Optimization Analysis: Identify the most cost-effective carriers and routes based on weight range and service levels.
+5. Delay Analysis: Assess delays by origin-destination pairs and carrier performance.
 
 ### Results
 
@@ -44,16 +38,17 @@ EDA helps understand the data distribution and uncover key insights. Visualizati
 
 ### Key Insights
 
-- Freight Cost Variability: Analysis revealed significant cost differences among carriers and weight bands, underscoring the importance of rate negotiations and carrier selection for cost efficiency.
-- Warehouse Utilization: Some warehouses operate close to capacity, indicating a need for load balancing and possibly expanding storage capacity in key locations.
-- Service Level Optimization: Understanding the distribution of service levels (e.g., Door-to-Door vs. Door-to-Port) can inform decisions about when to use costlier premium services.
-- Customer Order Patterns: Identifying top customers by order volume provides actionable insights for better inventory allocation and prioritization.
-- Product-Warehouse Mapping: Evaluating the alignment of products to warehouses can improve fulfillment efficiency and reduce lead times.
+The findings reveal that strategic adjustments, such as optimizing shipping routes, selecting cost-effective carriers, and balancing warehouse capacities, can reduce transportation costs and improve overall supply chain efficiency.
 
-### Future Directions
+**High Shipment Volume with Minor Delays**:
+- PORT04 → PORT09 is the most crucial route due to its high volume.
+- Despite the minor average delay, the high volume suggests the potential for a larger cumulative impact on delivery timelines.
+- Investigate potential causes for the delays, such as congestion, processing times, or carrier issues.
 
-- Extend the analysis to include real-time tracking data for dynamic optimization.
-- Incorporate demand forecasting to improve inventory planning.
+**Consistently On-Time Routes**:
+- PORT09 → PORT09 and PORT05 → PORT09 are consistently on time.
+- These routes are efficient but have low shipment volumes.
+- Consider whether they can support additional volume to balance the load from more congested routes.
 
 ### Source:
 
